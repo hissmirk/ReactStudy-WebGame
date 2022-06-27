@@ -1,5 +1,6 @@
 const React = require('react');
 
+
 const Try2 = ({ tryInfo }) => {
   return (
     <li>

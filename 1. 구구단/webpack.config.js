@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
+  mode: 'response-check-setting',
   devtool: 'eval', // hidden-source-map
   resolve: {
     extensions: ['.jsx', '.js'],

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDom from 'react-dom';
 
-import Test from "./RenderTest";
+import Lotto from "./LottoHooks";
 
-ReactDom.render(<Test />, document.querySelector('#root'));
+ReactDom.render(<Lotto />, document.querySelector('#root'));

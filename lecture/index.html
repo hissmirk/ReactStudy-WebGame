@@ -2,7 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>끝말잇기</title>
+    <title>실습</title>
+    <style>
+      #screen {
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        user-select: none;
+      }
+      #screen.waiting {
+        background-color: aqua;
+      }
+      #screen.ready {
+        background-color: red;
+        color: white;
+      }
+      #screen.now {
+        background-color: greenyellow;
+      }
+      #computer {
+        width: 142px;
+        height: 200px;
+        background-position: 0 0;
+      }
+      .ball {
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 20px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+        text-align: center;
+        margin-right: 20px;
+      }
+    </style>
     <link rel="shortcut icon" href="#">
 </head>
 <body>
