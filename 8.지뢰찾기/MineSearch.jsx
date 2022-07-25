@@ -1,8 +1,8 @@
-import React, {createContext, useMemo, useReduer} from 'react';
+import React, {createContext, useMemo, useReducer} from 'react';
 import Table from "./Table";
 import Form from './Form';
 
-export const COODE = {
+export const CODE = {
   MINE: -7,
   NORMAL: -1,
   QUESTION: -2,
@@ -55,6 +55,9 @@ const plantMine = (row, cell, mine) => {
     const hor = shuffle[i] % cell;
     data[ver][hor] = CODE.MINE;
   }
+
+  console.log(data);
+  return data;
 }
 
 export const START_GAME = 'START_GAME';
@@ -72,7 +75,7 @@ const reducer = (state, action) => {
 };
 
 const MineSearch = () => {
-  const [state, dispatch] = useReduer(reducer, initialState);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   const value = useMemo(() => ({ tableData: state.tableData, dispatch }), [state.tableData]);
 
